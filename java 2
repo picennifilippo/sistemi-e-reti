@@ -1,0 +1,89 @@
+ES 1
+
+/*dichiarare tre numeri in input
+stabilire con la funzione if quale dei tre numeri è maggiore
+*/
+import java.io.*;
+class Maggiore{
+	public static void main(String args[]) throws IOException{
+		int num1,num2,num3;
+		String comodo;
+		InputStreamReader instream=new InputStreamReader (System.in);
+		BufferedReader tastiera=new BufferedReader (instream);
+		System.out.println ("inserire il primo numero");
+		comodo=tastiera.readLine();
+		num1=Integer.parseInt (comodo);
+		System.out.println ("inserire il secondo numero");
+		comodo=tastiera.readLine();
+		num2=Integer.parseInt (comodo);
+		System.out.println ("inserire il terzo numero");
+		comodo=tastiera.readLine();
+		num3=Integer.parseInt (comodo);
+	   if (num1>num2 && num1>num3){
+		   System.out.println("il numero maggiore e' il primo");
+	   }if (num2>num1 && num2>num3){
+		   System.out.println("il numero maggiore e' il secondo");
+	   }if (num3>num1 && num3>num2){
+		   System.out.println("il numero maggiore e' il terzo");
+	   }
+}
+}
+		/*if (num1>num2){
+		if (num1>num3){
+			System.out.println("il numero maggiore è il primo");
+		}
+		}
+		else{
+			System.out.println("il numero maggiore è il terzo");
+		}else{
+			if (num2>num3)
+				System.out.println("il numero maggiore è il secondo");
+				
+	}
+	*/
+  
+  ES 2 
+  
+  /*
+dichiarare la variabile string
+finche alla domanda che ci viene posta rispondiamo a s il progmramma continua a scrivere numeri
+*/
+import java.io.*;
+class Numeri{
+	public static void main(String args[]) throws IOException{
+		int num1=1;
+		String risp="s";
+		InputStreamReader instream=new InputStreamReader (System.in);
+		BufferedReader tastiera=new BufferedReader (instream);
+		while(risp.equals("s")){
+			System.out.println(num1);
+			System.out.println ("vuoi continuare");
+			risp=tastiera.readLine();
+			num1++;
+		}
+	}
+}
+
+ES 3
+
+/*
+dichiarare una variabile
+utilizzando il while inserire i numeri pari compresi tra 1 e 23
+*/
+import java.io.*;
+class Pari{
+	public static void main(String args[]) throws IOException{
+		int num1=1;
+		String comodo;
+		InputStreamReader instream=new InputStreamReader (System.in);
+		BufferedReader tastiera=new BufferedReader (instream);
+		while(num1<23){
+			num1++;
+			if (num1%2==0){
+				System.out.println(num1);
+			}
+			num1++;
+		}
+		
+	}
+}
