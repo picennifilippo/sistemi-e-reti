@@ -1,0 +1,64 @@
+ES 1
+
+import java.util.Scanner;
+public class CandyShop {
+	public static void main (String [] args){
+		Scanner input = new Scanner(System.in);
+		int caramelle=100;
+		final double PREZZO=0.5;
+		while (caramelle>0){
+			System.out.println("sono ancora disponibili");
+			System.out.println(caramelle);
+			System.out.println("caramelle");
+		System.out.println ("quante caramelle vuoi comprare?");
+		int num=input.nextInt();
+		if (num<0){
+			System.out.println("il numero inserito e' errato");
+		}else if (num>caramelle){
+			num=caramelle;
+			System.out.println ("hai chiesto troppe caramelle");
+			System.out.println ("te ne daro' soltanto");
+			System.out.println (num);
+		}
+		caramelle=caramelle-num;
+		System.out.println ("costo");
+		System.out.print (num*PREZZO);
+		System.out.println ("euro");
+		}
+		System.out.println ("caramelle terminate");
+	}
+	
+}
+
+ES 2
+/*
+dati in input 10 numeri da tastiera calcolare la media di tutti i valori la percentuale dei numeri dispari sul totale dei valori 
+quanti sono i numeri pari
+
+dichiarare 4 variabili per calcolare le richieste dell'esercizio
+utilizzare il ciclo for per avere i numeri compresi tra 0 e 10
+
+*/
+import java.util.Scanner;
+public class Media{
+	public static void main (String [] args){
+		int percentuale,numeridispari,numeripari,somma=0,num;
+		float media;
+		num=input.nextInt ();
+		System.out.println ("inserisci 10 numeri");
+		Scanner input = new Scanner (System.in);
+		num=input.nextInt ();
+		for (int=0;i<10;i++){
+			Scanner input= new Scanner (System.in); 
+			int n=input.nextInt ();
+			somma=somma+n;
+		}
+		if (num%2==0){
+			contapari ++;
+		}else{
+			contadispari ++;
+		}
+		media=somma/10;
+		
+	}
+}
