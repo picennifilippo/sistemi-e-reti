@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class ContinuaFino {
+	public static void main (String [] args){
+		int somma=0;
+		int n;
+		Scanner input = new Scanner (System.in);
+		System.out.println ("scrivi un numero");
+		do{
+			System.out.println ("scrivi un numero");
+			n = input.nextInt ();
+			somma=somma+n;
+		}while ((n<0 && n%2==0) || (n>0 && n%3==0));
+			somma=somma+n;
+		System.out.println("la somma e'"+somma);
+	}
+}
+
+
+import java.util.Scanner;
+public class SommaCento {
+	public static void main (String [] args){
+		int somma=0;
+		int contanum=0;
+		Scanner input=new Scanner (System.in);
+		do{
+			int num= input.nextInt;
+			somma=somma+num;
+			contanum++;
+		}while (somma<=100 && contanum<10);
+		if (somma==100){
+		System.out.println ("ottenuto 100");
+		}else{
+			System.out.println ("tentativi esauriti");
+		}
+	}
+}
