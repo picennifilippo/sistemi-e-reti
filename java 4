@@ -1,0 +1,78 @@
+/*
+chiedere all'utente quanti numeri vuole inserire 
+utilizzare il for e l'if per stampare tutti i numeri pari e positivi
+altrimenti stampare il no
+*/
+import java.util.Scanner;
+public class TuttiPositiviPari{
+	public static void main (String[]args){
+		Scanner input = new Scanner (System.in);
+		int num1,num2;
+		int ContaPositivi=0;
+		System.out.println("inserisci una sequenza di numeri");
+		num1=input.nextInt();
+		for (int i=0;i<num1;i++){
+			System.out.println("inserire i numeri");
+			num2=input.nextInt ();
+			if (num2>0 && num2%2==0){
+				ContaPositivi++;
+			}
+			}
+			if (ContaPositivi=num1){
+				System.out.println("tutti positivi");
+			}else{
+				System.out.println("no");
+			}
+		}
+	}
+
+
+
+import java.util.Scanner;
+public class MediaMultipliDiTre{
+	public static void main (String[]args){
+		Scanner input = new Scanner (System.in);
+		int num1,num2,Multipli=0;
+		float media=0,somma=0;
+		System.out.println("inserisci quanti numeri vuoi");
+		num1=input.nextInt ();
+		for(int i=0;i<num1;i++){
+			System.out.println("inserire i numeri");
+			num2=input.nextInt ();
+			if (num2%3==0){
+				Multipli++;
+				somma=somma+num2;
+				media=somma/Multipli;
+			}
+		}
+		System.out.println("la media e'"+media);
+	}
+
+
+
+
+import java.util.Scanner;
+public class MediaPariDispari{
+	public static void main (String[]args){
+		Scanner input = new Scanner (System.in);
+		double num1,num2,Pari=0,Dispari=0;
+		double media=0,somma=0,somma2=0,media2=0;
+		System.out.println("inserire una sequenza di numeri");
+		num1=input.nextInt ();
+		for (int i=0;i<num1;i++){
+			System.out.println("inserire i numeri");
+			num2=input.nextInt ();
+			if (num2%2==0){
+				Pari++;
+				somma=somma+num2;
+				media=somma/Pari;
+			}else{
+				Dispari++;
+				somma2=somma2+num2;
+				media2=somma2/Dispari;
+			}
+		}
+		System.out.println("la media dei numeri pari e'"+media);
+		System.out.println("la media dei numeri dispari e'"+media2);
+	}
+}
