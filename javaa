@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Altezza{
+public static void main (String[]args){
+	Scanner input = new Scanner (System.in);
+	int ContaAlte=0,ContaBasse=0,n;
+	float media=0,somma=0,altezza;
+	System.out.println("inserisci il numero di persone");
+	n=input.nextInt();
+	for(int i=0;i<n;i++){
+		System.out.println("inserisci altezza");
+	altezza=input.nextInt();
+	somma=somma+altezza;
+		media=somma/n;
+		if (altezza>180){
+			ContaAlte++;
+		}else if (altezza<165){
+			ContaBasse++;
+		}
+	}
+	System.out.println("la media delle altezze e'"+media);
+	System.out.println("le persone piu alte di 1.80 sono"+ContaAlte);
+	System.out.println("le persone piu basse di 1.65 sono"+ContaBasse);
+}
+}
+
+
+import java.util.Scanner;
+public class Multipli{
+public static void main (String[]args){
+	Scanner input = new Scanner (System.in);
+	int n,num1=2,num2=1;	
+	do{
+		System.out.println("inserisci un numero tra 2 e 14");
+	n=input.nextInt();
+	}while(n<2 || n>14);
+	for(int i=0;i<n;i++){
+		num2=num1*num2;
+	}
+	System.out.println("le potenze sono"+num1);
+	}
+}
