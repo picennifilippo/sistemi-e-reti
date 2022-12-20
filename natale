@@ -1,0 +1,41 @@
+/*
+dichiarare la variabile n,che sarà la sequenza di numeri da inserire
+dichiarare le variabili contatori contapari=0 e contadispari=0
+dichiarare la variabile prodotto che ci servirà per controllare che il prodotto dei numeri inseriti non sia maggiore a 500
+dichiarare le variabile media1 per calcolare la media dei numeri parie e media2 per clacolare la media dei numeri dispari
+dichiarare la variabile n2 che ci servirà per controllare se la nostra sequenza di numeri è crescente
+utilizzare il ciclo do while per far ripetere l'operazione finchè la variabile operazione è minore di 500
+all'interno del ciclo do controllare con il comando if se il numero e' multiplo di 7 se la condizione è vera aumentare il contatore multipli
+utilizzare il comando if per controllare che i numeri siano pari o dispari e far aumentare il rispettivo contatore per calcolare in seguito la media
+ 
+ 
+*/
+
+
+import java.util.Scanner;
+public class SuperaCinquecento{
+	public static void main (String [] args){
+		Scanner input = new Scanner (System.in);
+		int n,prodotto=0,multipli=0,media1=0,media2=0,contapari=0,contadispari=0,num2=0;
+		do{
+			System.out.println("inserisci una sequenza di numeri");
+			n=input.nextInt();
+			prodotto=prodotto*n;
+			if (n%7==0){
+				multipli++;
+			}else if (n%2==0){
+				contapari++;
+			}else{
+				contadispari++;
+			}
+			num1=num2;
+			if(num1<num2){
+				
+			}
+			
+		}while(prodotto=500);
+		media1=media/contapari;
+		media2=media/contadispari;
+			
+	}
+}
