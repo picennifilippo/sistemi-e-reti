@@ -1,0 +1,49 @@
+/*
+dichiarare le variabili somma e media uguali a zero, ci serviranno per calcolare la somma e la media 
+dichiarare l'array 
+dichiarare le variabili min e max uguali a zero, serviranno per trovare il numero minore e maggiore
+dichiarare la variabile conta uguale a 0,servirà per controllare i numeri minori della media
+far inserire il primo numero all'utente
+mettere il primo numero inserito uguale alla variabile min e max
+utilizzare il ciclo for per far inserire tutti i voti
+all'interno del ciclo sommare tutti i voti
+all'interno del ciclo utilizzare l'if per controllare quale tra i minori inseriti è maggiore o minore
+fuori dal ciclo calcolare la media 
+eseguire le stampe della media,del numero minore e maggiore
+
+*/
+
+import java.util.Scanner;
+public class Array{
+	public static void main (String[]args){
+		Scanner input = new Scanner (System.in);
+		int voti[] = new int [10];
+		float somma=0,media=0;
+		int min=0,max=0,conta=0;
+		System.out.println("inserisci un numero");
+		voti[0]=input.nextInt();
+		somma=somma+voti[0];
+		min=voti[0];
+		max=voti[0];
+		for (int i=0;i<10;i++){
+			System.out.println("inserisci i voti");
+			voti[i]=input.nextInt();
+			somma=somma+voti[i];
+			if (voti[i]<min){
+				min=voti[i];
+			}else if (voti[i]>max){
+				max=voti[i];
+			}
+		}
+		media=somma/10;
+		System.out.println("la media e'"+media);
+		System.out.println("il numero minore e'"+min);
+		System.out.println("il numero maggiore e'"+max);
+		for (int j=0; j<10; j++){
+			if(voti[j]<media){
+				conta++;
+			}
+		}
+		System.out.println("i valori inferiori alla media sono "+conta);
+	}
+}
