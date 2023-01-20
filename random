@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.Random;
+public class Random1{
+	public static void main (String[]args){
+		Scanner input= new Scanner (System.in);
+		int num;
+		int x[]= new int [10];
+		Random rn = new Random();
+		System.out.println("inserisci un valore");
+		num=input.nextInt();
+		for (int i=0;i<10;i++){
+			x[i]=rn.nextInt(100);
+			if (num==x[i]){
+				System.out.println("hai indovinato il numero");
+			}
+		}
+		}
+		}
