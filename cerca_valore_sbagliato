@@ -1,0 +1,32 @@
+/*dichiarare un array di 10 numeri random da 1 a 100
+input valore da cercare
+*/
+import java.util.Scanner;
+import java.util.Random;
+public class Array3{
+	public static void main (String[]args){
+		Scanner input = new Scanner(System.in);
+		int num1[] = new int [10];
+		Random generator = new Random();
+		for (int i=0;i<10;i++){
+			num1[i]=generator.nextInt(100);
+			System.out.println(num1[i]);
+		}
+		int valore;
+		valore=input.nextInt();
+		System.out.println("il valore da cercare e'"+valore);
+		int i=0,n=0,trovato=0,pos=0;
+		while (i<n && trovato==0){
+			if(num1[i]==valore){
+				pos=i;
+				trovato++;
+			}
+			i++;
+		}
+		if (trovato==1){
+			System.out.println("l'elemento trovato in posizione"+pos);
+		}else{
+			System.out.println("il valore non e' stato trovato");
+		}
+	}
+}
