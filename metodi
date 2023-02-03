@@ -1,0 +1,20 @@
+//dati in input due valori richiamo un metodo che fa la somma 
+import java.util.Scanner;
+public class Metodi{
+	public static int metodo(int num1,int num2){
+		int somma=0;
+		somma=num1+num2;
+		return somma;
+	} 
+
+public static void main(String[]args){
+	Scanner input = new Scanner(System.in);
+	int num1;
+	int num2;
+	System.out.println("inserisci il primo numero");
+	num1=input.nextInt();
+	System.out.println("inserisci il secondo numero");
+	num2=input.nextInt();
+	System.out.println(metodo(num1,num2));
+}
+}
