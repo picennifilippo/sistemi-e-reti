@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class Errori{
+	public static void main (String[]args){
+		Scanner input = new Scanner (System.in);
+		int x=0;
+		boolean valido=false;
+		do{
+			try{
+		System.out.println("inserisci un numero:");
+		x=input.nextInt();
+		valido=true;
+			}catch(InputMismatchException errore){
+				System.out.println("numero errato");
+			}
+			input.nextLine();
+		}while(!valido);
+		x=x*x;
+		System.out.println(x);
+}
+}
