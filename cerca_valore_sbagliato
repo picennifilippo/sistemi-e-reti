@@ -30,3 +30,33 @@ public class Array3{
 		}
 	}
 }
+
+
+
+
+import java.io.*;
+import java.util.*;
+public class Eccezione{
+	static float divisione(int a,int b){
+		float c;
+		try{
+			return a/b;
+		}catch(InputMismatchException errore){
+			System.out.println("non si può dividere per 0");
+		return 0;
+		}
+		
+	}
+	static float quoziente10(int d){
+		return divisione(10,d);
+	}
+	public static void main (String []args){
+		
+		
+		for(int n=10;n>=0;n--){
+			System.out.println(quoziente10(n));
+			
+		}
+		}
+		}
+	
