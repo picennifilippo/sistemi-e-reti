@@ -1,0 +1,22 @@
+/*
+dichiarare la prima funzione e inserire una stampa 
+dichiarare la seconda funzione e inserire una stampa
+dichiarare la terza funzione e inserire una stampa
+nel main 
+*/
+
+import java.util.Scanner;
+public class Funzione{
+	 static void frase1(){
+		System.out.println("prima stampa");
+	} static void frase2(){
+		System.out.println("seconda stampa");
+	}static void frase3(){
+		System.out.println("terza frase");
+	}
+	public static void main (String[]args){
+		frase1();
+		frase2();
+		frase3();
+	}
+}
