@@ -38,11 +38,10 @@ import java.io.*;
 import java.util.*;
 public class Eccezione{
 	static float divisione(int a,int b){
-		float c;
 		try{
 			return a/b;
-		}catch(InputMismatchException errore){
-			System.out.println("non si può dividere per 0");
+		}catch(ArithmeticException exception){
+			System.out.println("non si puo' dividere per 0");
 		return 0;
 		}
 		
