@@ -1,0 +1,40 @@
+
+public class Cane{				//creo la classe principale nella quale vado a dichiarare gli attributi
+	//attributi della classe tutti di tipo public
+		public String nome;
+		public String Razza;
+		public int anni;
+		
+		//zona riservata ai metodi
+		public void info(){
+			System.out.println("Nome: "+nome);
+			System.out.println("Razza: "+Razza);
+			System.out.println("Anni: "+anni);
+		}
+		public int converti_anni(){
+			if(anni <= 2){
+				return anni*11;
+			}else{
+				return 22+((anni-2)*5);
+			}
+			
+		}
+	}
+
+
+public class TestCane{
+	public static void main(String[]args){
+		Cane caneDiShaggy;
+		caneDiShaggy.nome="Scooby-Doo";
+		caneDiShaggy.razza="Alano";
+		caneDiShaggy.anni=9;
+		
+		caneDiShaggy.scriviInfo();
+		
+		Cane caneDiTopolino=new Cane		//istanzio un oggetto della classe cane attraverso un metodo costruttore
+		caneDiTopolino.nome="Pluto";
+		caneDiTopolino.razza="bracco";
+		caneDiTopolino.anni=7;
+		System.out.println(caneDiTopolino.nome+"e' un"+caneDiTopolino.razza"di"+caneDiTopolino.converti_anni()+"anni umani");
+	}
+}
