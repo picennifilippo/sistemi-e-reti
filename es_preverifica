@@ -1,0 +1,67 @@
+/*fuori dal metodo far inserire dall'utente la stringa e il numero 
+all'interno del metodo controllare che il numero inserito dall'utente sia positivo,
+di conseguenza far stampare piu' volte la frase.
+in caso il numero fosse negativo far stampare la stringa di errore
+*/
+import java.util.Scanner;
+public class Ripeti{
+	public static void stampa(int n,String frase){
+		if(n>0){
+		for(int i=0;i<n;i++){
+			System.out.println(frase);
+		}
+	}else{
+		System.out.println("ERRORE: numero negativo");
+	}
+	}
+	public static void main(String args[]){
+		Scanner input = new Scanner (System.in);
+		String frase;
+		int n;
+			System.out.println("inserisci una stringa");
+			frase= input.nextLine();
+			System.out.println("inserisci un numero");
+			n= input.nextInt();
+			stampa(n,frase);
+		}
+	}
+  
+  
+  /*
+nel main far inserire da tastiera tre numeri dall'utente.
+all'interno del metodo utilizzare la variabile booleana c
+e far ritornare vero se i numeri sono tutti uguali oppure 
+falso se anche uno e' diverso
+infine nel main controllare se il metodo ha ritornato vero
+far scrivere la stringa (Tutti uguali!), se restituisce falso
+far scrivere la stringa (Almeno uno e' diverso)
+*/
+import java.util.Scanner;
+public class TuttiUguali{
+	public static boolean controllo(int n1,int n2,int n3){
+		boolean c;
+		if(n1==n2 && n1==n3){
+			c = true;
+		}else{
+			c = false;
+		}
+		return c;
+	}
+public static void main(String args[]){
+		Scanner input = new Scanner (System.in);
+		int n1,n2,n3;
+		System.out.println("inserisci il primo numero");
+		n1= input.nextInt();
+		System.out.println("inserisci il secondo numero");
+		n2= input.nextInt();
+		System.out.println("inserisci il terzo numero");
+		n3= input.nextInt();
+		if(controllo(n1,n2,n3)==true){
+			System.out.println("Tutti uguali!");
+		}else{
+			System.out.println("Almeno uno e' diverso");
+		}
+}
+}
+
+
