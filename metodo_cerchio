@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Cerchio{
+	private double raggio;
+	public void setRaggio(double r)
+	{
+		raggio = r;
+	}
+	public double area()
+	{
+		return(raggio * raggio * Math.PI);
+	}
+}
+
+import java.util.Scanner;
+public class ProgCerchio{
+	public static void main (String [] args){
+		Cerchio tavolo;
+		
+		tavolo = new Cerchio();
+		
+		tavolo.setRaggio(0.75);
+		
+		System.out.println("Area del tavolo = " + tavolo.area());
+	}
+	
+}
