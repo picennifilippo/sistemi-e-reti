@@ -1,0 +1,54 @@
+import java.util.Scanner;
+class Conto{
+    public static void main (String []args){
+   	 Scanner input = new Scanner (System.in);
+   	 CC saldo2;
+   	 saldo2 = new CC();
+   	 double versato;
+   	 double prelevato;
+	 int utente;
+	 int utente2;
+	 
+	 System.out.println("inserisci il saldo del conto ");
+   	 saldo2.saldo = input.nextDouble();
+	 do{
+		 System.out.println("se vuoi prelevare premi 1");
+			 utente2 = input.nextInt();
+		 if(utente2==1){
+			 System.out.println("inserisci l'importo che vuoi prelevare");
+			prelevato = input.nextDouble();
+			saldo2.prelevo(prelevato);
+		 }else{
+			 System.out.println("inserisci l'importo che vuoi versare ");
+		versato = input.nextDouble();
+		saldo2.versamenti(versato);
+		 }
+   	 
+	 System.out.println("premi 1 per continuare");
+	 utente= input.nextInt();
+	 
+   	 
+   	 
+   	 saldo2.stampa();
+	 }while(utente==1);
+   	 
+   	 
+    }
+}
+
+
+
+import java.util.Scanner;
+public class CC{
+    public double saldo;
+    public void versamenti(double a){
+   	 saldo = saldo + a;
+    }
+    public void prelevo(double b){
+   	 saldo = saldo - b;
+    }
+    public void stampa(){
+   	 System.out.println("il saldo e'"+saldo);
+    }
+}
+
