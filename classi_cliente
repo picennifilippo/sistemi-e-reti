@@ -1,0 +1,63 @@
+import java.util.Scanner;
+class Cliente{
+	
+	private  String nome;
+	private String cognome;
+	private double saldo;
+	
+	public Cliente(String nom,String cogn,double imp){
+		nome=nom;
+		cognome=cogn;
+		saldo=imp;
+	}
+	public void addebita(importo){
+		saldo+=importo;
+	}
+	public void pagamento(importo){
+		saldo=importo;
+	}
+	public void visualizza(){
+		System.out.println(nome,cognome,saldo);
+	}
+}
+
+
+
+import java.util.Scanner;
+class Fattura{
+	
+	public String destinatario;
+	public double quantita;
+	public String descrizione;
+	public double prezzo;
+	
+	public void calcolaimp{
+		
+	}
+	public void imposta{
+		
+	}
+	public void totale{
+		
+	}
+	public void visualizza{
+		
+	}
+}
+
+
+import java.util.Scanner;
+class ProgFattura{
+	public static void main (String []args){
+   	 Scanner input = new Scanner (System.in);
+	 Cliente rossi = new Cliente ("Mario","Rossi",0.0);
+	 Fattura f1 = new Fattura (rossi);
+	 f1.quantita = 10;
+	 f1.prezzo = 5.20;
+	 f1.descrizione = "cereali";
+	 f1.visualizza();
+	 double bonifico = 52.0;
+	 rossi.paga(bonifico);
+	 rossi.visualizza();
+	}
+}
