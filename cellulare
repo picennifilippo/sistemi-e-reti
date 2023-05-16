@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Cellulare{
+	private double carica;
+	private int numeroChiamate;
+	
+	public Cellulare(double unaRicarica){
+		carica=unaRicarica;
+	}
+	public void ricarica(double unaRicarica){
+		ricarica=ricarica+unaRicarica;
+	}
+	public void chiama(double minutiDurata){
+		numeroChiamate++;
+		carica=carica-(minutiDurata*0.20);
+	}
+	public double numero404(){
+		return carica;
+	}
+	public int getNumeroChiamate(){
+		return numeroChiamate;
+	}
+	public void azzeraChiamate(){
+		numeroChiamate=0;
+	}
+}
+
+
+
+import java.util.Scanner;
+public class Contratto{
+	public static void main(String[]args){
+		Scanner input = new Scanner(System.in);
+		Cellulare telefono;
+		telefono = new Cellulare();
+		
+		System.out.println("quantita' di euro disponibile");
+		carica.telefono=input.nextDouble();
+		
+		System.out.println("numero delle chiamate effettuate con il cellulare");
+		numeroChiamate.telefono=input.nextInt();
+		
+		System.out.println("numero delle chiamate effettuate con il cellulare");
+		numeroChiamate.telefono=input.nextInt();
+		
+	}
+}
